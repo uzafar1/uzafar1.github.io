@@ -2,17 +2,71 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Week 6 page</title>
+        <title>Title</title>
+   <link rel="stylesheet" type="text/css" href="screen.css">
     </head>
     <body>
-        <h1>My First Page Ever</h1>
-        <h2>By: Uraiba Zafar</h2>
-        <p><a href="uzafar@pratt.edu">Email Me</a>
-        </p>
-        <p>Welcome to my page.
-        Visit the <a href="http://www.pratt.edu/">Pratt website.</a>
-        </p>
-        <img src="cutekitty.jpeg" width="300" alt="a picture of a cute baby kitten">
-        
+    <header>
+        <h1>Azadi</h1>
+    </header>
+       <nav id="nav">
+        <ul id="ul">
+            <li id="li1"><a href="/index.html">Home  </a></li>
+            <li id="li2"><a href="/secondpage.html">  About</a></li>
+            <li id="li3"><a href="/Blogpost1.html">  Spring 2025 Trends</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h2>The FREEDOM to live authentically and ethically.</h2>
+    </div>
+    <div id="div2">
+        <p>Join the family! Every week we discuss a new fashion topic whether that's the current fashion trends or how to style a specific piece, come learn with us.</p>
+   </div>
+        <h3>
+        Some topics we've covered so far:
+        </h3>
+        <div>
+<ul2 class="normal-list">
+    <li>Spring 2025 Trends</li>
+    <li>Leather Jacket</li>
+    <li>Wide Leg Jeans</li>
+</ul2>
+    </div>
+        <p>   </p>
+        <div class="carousel">
+    <div class="carousel-images">
+        <img src="Image1.jpg" width= 200px alt="Image 1">
+        <img src="Image2.jpg" width=200px  alt="Image 2">
+        <img src="Image3.jpg" width=200px alt="Image 3">
+        <img src="image4.jpg" width=200px alt="Image 4">
+        <img src="image5.jpg" width=200px alt="Image 5">
+        <img src="image6.jpg" width=200px alt="Image 6">
+        <img src="image7.jpg" width=200px alt="Image 7">
+        <img src="image8.jpg.webp" width=200px alt="Image 8">
+        <img src="image9.jpg.webp" width=200px alt="Image 9">
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+        <script>
+        let slideIndex = 0;
+
+        function moveSlide(step) {
+            const slides = document.querySelectorAll('.carousel-images img');
+            slideIndex += step;
+
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+
+            const offset = -slideIndex * 100; // Moves the images based on the slide index
+            document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+<footer> ©Uraiba Zafar 2025</footer>
+    
     </body>
 </html>
