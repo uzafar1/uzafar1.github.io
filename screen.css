@@ -1,0 +1,163 @@
+*{
+
+}
+h1 {
+                text-align: center;
+                color:#B5838D;
+                padding:3px;
+                font-size: 6em;
+                font-family:'didot','sans-serif';
+                border: 3px dotted #888193;
+                border-radius: 5px;
+                width: 100%;
+                margin: 0;
+                position:relative;
+            }
+h2 {
+    text-align: center;
+    font-family: bradleyhand, cursive;
+    font-size: x-large;
+    
+}
+body {
+    background-color: #6D6875
+}
+header {
+    position:relative;
+    width: 100%;
+    margin:auto
+}
+div {
+    position:relative;
+    top: 1px;
+    width: 100%;
+}
+#div2 {
+    text-align: center;
+    position:relative;
+    width: 100%;
+}
+nav {
+    border: 1px solid black;
+    text-align: center;
+    width: max-content;
+    background-color: #ffe8e8; 
+    margin: 1px 40%; 
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    gap: 10px;
+    padding: 6px 15px;
+    border: 1px solid black;
+    list-style-type: none;
+    display: flex; 
+    justify-content: center; 
+    margin: 0;
+}
+
+li1 {
+    padding: 10px 15px;
+    border: 1px solid black;
+    margin: 0 15px; 
+}
+
+li2 {
+    border: 1px solid black;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block; 
+}
+li3 {
+    border: 1px solid black;
+    text-align: center;
+    width: fit-content;
+}
+ul:hover {
+    background-color: #898989; 
+    border-radius: 5px; 
+}
+iframe{
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px;
+}
+p {
+    color: #ffcfe9;
+    font-size: large;
+    margin-left: 10px
+}
+dc {
+    color: beige;
+    font-size: x-large;
+}
+img {
+    float: left;
+    margin-right: 10px;
+}
+h3 {
+    font-size: xx-larger;
+    margin: 1px;
+    
+}
+.normal-list{
+    color: #ffcffb;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #000; 
+}
+
+th, td {
+    border: 1px solid #ddd; 
+    padding: 10px;
+    text-align: center; 
+}
+
+th {
+    background-color: #f4f4f4;
+}
+.carousel {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden; /* Hides images outside the view area */
+}
+
+.carousel-images {
+    display: flex; /* To arrange images in a row */
+    transition: transform 0.5s ease;
+    height: 400px;
+    width: 400px;
+}
+
+.carousel-images img {
+    width: 63%; 
+    height: unset;
+    display: block; /* Removes extra space under the images */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
